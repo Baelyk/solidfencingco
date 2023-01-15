@@ -1,54 +1,41 @@
 body {
+  max-width: 1500px;
+  display: block;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+
+  --sfc-gold: #e8b334;
+  --sfc-grey: #1a1a1a;
+
   font-family: sans-serif;
+  font-size: 16pt;
 }
 
 .logo img {
+  max-height: 50vh;
   max-width: 100%;
   display: block;
+  margin-top: 1%;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* ======== Nav Bar ======== */
-nav {
-  --nav-bg: #fbf1c7;
-  --nav-fg: #458577;
-  --nav-bg-hover: #928374;
-  --nav-fg-hover: #076678;
+.contact {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-nav ul {
-  /* No bullets */
-  list-style-type: none;
-
-  /* Remove default browser styling */
-  margin: 0;
-  padding: 0;
-
-  /* Prevent later elements appearing to the right instead of below */
-  overflow: hidden;
-
-  background-color: var(--nav-bg);
+.contact a {
+  white-space: nowrap;
 }
 
-nav li {
-  /* Arrange nav elements horizontally */
-  float: left;
+.contact h1 {
+  color: var(--sfc-grey);
+  font-size: 30pt;
+  margin-bottom: 1%;
 }
 
-nav li a {
-  /* Nav elements as blocks so they have some size */
-  display: block;
-  padding: 10pt 20pt;
-
-  /* No link underlining */
-  text-decoration: none;
-
-  font-weight: bold;
-  color: var(--nav-fg);
-}
-
-nav li a:hover {
-  color: var(--nav-fg-hover);
-  background-color: var(--nav-bg-hover);
+.contact p {
+  margin-top: 1%;
 }
