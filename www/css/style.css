@@ -1,0 +1,54 @@
+body {
+  font-family: sans-serif;
+}
+
+.logo img {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ======== Nav Bar ======== */
+nav {
+  --nav-bg: #fbf1c7;
+  --nav-fg: #458577;
+  --nav-bg-hover: #928374;
+  --nav-fg-hover: #076678;
+}
+
+nav ul {
+  /* No bullets */
+  list-style-type: none;
+
+  /* Remove default browser styling */
+  margin: 0;
+  padding: 0;
+
+  /* Prevent later elements appearing to the right instead of below */
+  overflow: hidden;
+
+  background-color: var(--nav-bg);
+}
+
+nav li {
+  /* Arrange nav elements horizontally */
+  float: left;
+}
+
+nav li a {
+  /* Nav elements as blocks so they have some size */
+  display: block;
+  padding: 10pt 20pt;
+
+  /* No link underlining */
+  text-decoration: none;
+
+  font-weight: bold;
+  color: var(--nav-fg);
+}
+
+nav li a:hover {
+  color: var(--nav-fg-hover);
+  background-color: var(--nav-bg-hover);
+}
