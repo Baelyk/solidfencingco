@@ -39,3 +39,7 @@ body {
 .contact p {
   margin-top: 1%;
 }
+
+.contact address p {
+  margin: 0;
+}
